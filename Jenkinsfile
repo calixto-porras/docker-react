@@ -2,6 +2,6 @@ properties([parameters([string(defaultValue: 'Hello', description: 'How should I
 
 node {
     echo "${params.Greeting} World!"
-    echo ${env.BRANCH_NAME}
-    echo ${env.CHANGE_ID}
+    echo "${env.BRANCH_NAME}"
+    echo "${env.CHANGE_ID}"
 }
